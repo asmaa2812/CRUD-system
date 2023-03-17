@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Playfair+Display&family=Poppins:ital,wght@0,300;0,600;1,300&family=Roboto:wght@300;400;500&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-6/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="p-5">
+    
+<div class="w-75 mx-auto  shadow-lg m-5 p-5 rounded" >
+    <h1 class="text-uppercase">crud system</h1>
+    <label for="productNameInput " class="text-capitalize fs-5">productName</label>
+    <input type="text" class="form-control mb-3" id="productNameInput">
+    <label for="productCategoryInput" class="text-capitalize fs-5">productCategory</label>
+    <input type="text" class="form-control mb-3" id="productCategoryInput">
+    <label for="productPriceInput" class="text-capitalize fs-5">productPrice</label>
+    <input type="text" class="form-control mb-3" id="productPriceInput">
+    <label class="text-capitalize fs-5">productDescription</label>
+    <textarea class="form-control mb-3" id="productDescriptionInput"></textarea>
+    <button onclick="createProduct()"  class="btn btn-primary">AddProduct</button>
+    <button onclick="clearForm()" class="btn btn-info">Clear</button>
+</div>
+<input onkeyup="searchProduct()" id="productSearchInput" type="text" class="form-control w-50 mx-auto my-4" placeholder="search...">
+
+        <table class="table w-75 mx-auto">
+            <thead>
+                <tr>
+                    <th >index</th>
+                    <th >name</th>
+                    <th >category</th>
+                    <th >price</th>
+                    <th >desc</th>
+                    <th >update</th>
+                    <th >delete</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+              
+            </tbody>
+        </table>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
